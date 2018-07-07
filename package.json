@@ -1,0 +1,22 @@
+{
+  "name": "production-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpope33/production-test.git"
+  },
+  "author": "kpax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpope33/production-test/issues"
+  },
+  "homepage": "https://github.com/jpope33/production-test#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
