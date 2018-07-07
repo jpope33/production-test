@@ -1,13 +1,18 @@
 const express = require('express');
-
+const bodyParser = require('body-parser');
 const app = express();
 
-app.get('/api', (req,res)=> {
-  res.json({isLoggedIn: false, message: "You can't access shit"});
+// body parser middleware
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+
+app.get('/api/hello', (req,res)=> {
+  res.send({express: 'Hello From Express'});
 })
 
 app.listen(3001, ()=> {
-  console.log("Express Started on 3000");
+  console.log("Express Started on 3001");
 });
 
 // NOTES
